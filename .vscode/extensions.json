@@ -1,0 +1,4 @@
+{
+  "stylelint.vscode-stylelint", //style-lint相依
+  "dbaeumer.vscode-eslint" //es-lint相依
+}
