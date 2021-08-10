@@ -1,5 +1,11 @@
 <template>
   <div class="about test:tee">
+    <h1 class="text-sm laptop:text-6xl">
+      標題
+    </h1>
+    <h1>
+      base 標題
+    </h1>
     <div class="card">
       <div class="flex-shrink-0">
         <svg
@@ -59,7 +65,7 @@
       <div class="md:flex">
         <div class="md:flex-shrink-0">
           <img
-            class="h-48 w-full object-cover md:h-full md:w-48"
+            class="h-48  w-full object-cover md:h-full md:w-48"
             src="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80"
             alt="Man looking at item at a store"
           >
