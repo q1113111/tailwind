@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
   darkMode: false, // or 'media' or 'class'
@@ -16,5 +18,13 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [
+    // 用JS方式 設定全域樣式
+
+    plugin(function ({ addBase, theme }) {
+      addBase({
+        h2: { fontSize: theme('fontSize.lg') }
+      })
+    })
+  ]
 }

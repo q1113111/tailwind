@@ -6,6 +6,7 @@
     <h1>
       base 標題
     </h1>
+    <h2>我是H2</h2>
     <div class="card">
       <div class="flex-shrink-0">
         <svg
@@ -84,6 +85,14 @@
         </div>
       </div>
     </div>
+    <input
+      type="text"
+      class=" focus:outline-none focus:ring-red-700"
+    >
+    <br>
+    <button class="bg-red-400 text-green-300 hover:text-blue-600 hover:bg-yellow-400 w-20 h-12">
+      test
+    </button>
   </div>
 </template>
 <script>
