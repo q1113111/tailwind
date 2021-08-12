@@ -1,5 +1,5 @@
 const plugin = require('tailwindcss/plugin')
-
+// 如果要安裝全域設定 使用指令 npx tailwindcss init --full
 module.exports = {
   purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
   darkMode: false, // or 'media' or 'class'
@@ -16,7 +16,10 @@ module.exports = {
     }
   },
   variants: {
-    extend: {}
+    // 為borderStyle增加hover的class
+    borderStyle: ['responsive', 'hover'],
+    // 目前好像不用加這段也有
+    divideColor: ['group-hover']
   },
   plugins: [
     // 用JS方式 設定全域樣式

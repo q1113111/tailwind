@@ -1,5 +1,6 @@
 <template>
   <div class="about test:tee">
+    <!-- rwd -->
     <h1 class="text-sm laptop:text-6xl">
       標題
     </h1>
@@ -7,6 +8,7 @@
       base 標題
     </h1>
     <h2>我是H2</h2>
+    <!-- @apply -->
     <div class="card">
       <div class="flex-shrink-0">
         <svg
@@ -53,6 +55,7 @@
           fill="#FFF"
         /></g></svg>
       </div>
+      <!-- flexbox 偽類 -->
       <div>
         <div class="text-xl font-medium text-black">
           ChitChat
@@ -90,9 +93,22 @@
       class=" focus:outline-none focus:ring-red-700"
     >
     <br>
-    <button class="bg-red-400 text-green-300 hover:text-blue-600 hover:bg-yellow-400 w-20 h-12">
+    <button class="bg-red-400 text-green-300  border-8  hover:text-blue-600 hover:bg-yellow-400 hover:border-dashed w-20 h-12">
       test
     </button>
+    <br>
+    <!-- group-hover -->
+    <div class="group border-indigo-500 hover:bg-white hover:shadow-lg hover:border-transparent">
+      <p class="text-indigo-600 group-hover:text-yellow-900 tablet:text-yellow-600">
+        New Project
+      </p>
+      <!-- RWD -->
+      <p class="text-indigo-500 group-hover:text-gray-500 tablet:group-hover:text-green-400">
+        Create a new project from a variety of starting templates.
+      </p>
+    </div>
+
+    <!-- // va 未完成 -->
   </div>
 </template>
 <script>
