@@ -93,9 +93,16 @@
       class=" focus:outline-none focus:ring-red-700"
     >
     <br>
-    <button class="bg-red-400 text-green-300  border-8  hover:text-blue-600 hover:bg-yellow-400 hover:border-dashed w-20 h-12">
+    <button
+      class="bg-red-400 text-green-300  border-8  hover:text-blue-600 hover:bg-yellow-400 hover:border-dashed w-20 h-12"
+      @click="show = !show"
+    >
       test
     </button>
+    <!-- vue 程式控制+入多個class -->
+    <div :class="{'bg-blue-800 text-3xl':show}">
+      testsss
+    </div>
     <br>
     <!-- group-hover -->
     <div class="group border-indigo-500 hover:bg-white hover:shadow-lg hover:border-transparent">
@@ -107,7 +114,9 @@
         Create a new project from a variety of starting templates.
       </p>
     </div>
-
+    <div class="test hover:primary">
+      test
+    </div>
     <!-- // va 未完成 -->
   </div>
 </template>
@@ -132,4 +141,5 @@ export default {
 .test\:tee {
   background-color: #F0F;
 }
+
 </style>

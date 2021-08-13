@@ -7,3 +7,10 @@
   h1 {
     @apply text-4xl; }
 }
+
+/* 自訂class名稱 使用hover active... */
+@variants hover {
+  .primary {
+    color: #F0F;
+  }
+}
