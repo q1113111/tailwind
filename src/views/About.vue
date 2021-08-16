@@ -114,10 +114,23 @@
         Create a new project from a variety of starting templates.
       </p>
     </div>
+    <!-- variants -->
     <div class="test hover:primary">
       test
     </div>
-    <!-- // va 未完成 -->
+    <!-- 自定義組件樣式 -->
+    <!-- js設定 -->
+    <button class="btn btn-indigo">
+      layers component in JS
+    </button>
+    <!-- css設定 -->
+    <button class="btn btn-blue ">
+      layers component in CSS
+    </button>
+    <!-- utilities -->
+    <button class="btn btn-blue tablet:filter-grayscale hover:filter-grayscale">
+      layers component in Unilties
+    </button>
   </div>
 </template>
 <script>

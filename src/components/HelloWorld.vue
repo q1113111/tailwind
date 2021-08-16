@@ -126,8 +126,14 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String,
-    test: String
+    msg: {
+      type: String,
+      default: ''
+    },
+    test: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>
