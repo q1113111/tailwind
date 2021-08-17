@@ -37,7 +37,33 @@ module.exports = {
   plugins: [
     // 用JS方式 設定全域樣式
 
-    plugin(function ({ addBase, theme }) {
+    plugin(function ({ addBase, theme, addComponents, addUtilities }) {
+      // 設定btn 組件樣式
+      const buttons = {
+        '.btn': {
+          padding: `${theme('spacing.2')} ${theme('spacing.4')}`,
+          borderRadius: theme('borderRadius.md'),
+          fontWeight: theme('fontWeight.600')
+        },
+        '.btn-indigo': {
+          backgroundColor: theme('colors.indigo.500'),
+          color: theme('colors.white'),
+          '&:hover': {
+            backgroundColor: theme('colors.indigo.600')
+          }
+        }
+      }
+      const newUtilities = {
+        '.filter-none': {
+          filter: 'none'
+        },
+        '.filter-grayscale': {
+          filter: 'grayscale(100%)'
+        }
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+      addComponents(buttons)
+      // 設定基本樣式
       addBase({
         h2: { fontSize: theme('fontSize.lg') }
       })

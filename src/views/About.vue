@@ -124,6 +124,23 @@
       src="https://interactive-examples.mdn.mozilla.net/media/examples/firefox-logo.svg"
       alt=""
     >
+    <!-- variants -->
+    <div class="test hover:primary">
+      test
+    </div>
+    <!-- 自定義組件樣式 -->
+    <!-- js設定 -->
+    <button class="btn btn-indigo">
+      layers component in JS
+    </button>
+    <!-- css設定 -->
+    <button class="btn btn-blue ">
+      layers component in CSS
+    </button>
+    <!-- utilities -->
+    <button class="btn btn-blue tablet:filter-grayscale hover:filter-grayscale">
+      layers component in Unilties
+    </button>
   </div>
 </template>
 <script>
