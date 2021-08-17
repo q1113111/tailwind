@@ -18,7 +18,8 @@ module.exports = {
       none: 'none',
       grayscale: 'grayscale(1)',
       invert: 'invert(1)',
-      sepia: 'sepia(1)'
+      sepia: 'sepia(1)',
+      test: 'blur(5)'
     },
     backdropFilter: { // defaults to {}
       none: 'none',
@@ -53,9 +54,10 @@ module.exports = {
           }
         }
       }
+      // 使用js的可以在html顯示提示字元
       const newUtilities = {
-        '.filter-none': {
-          filter: 'none'
+        '.input-text': {
+          outline: 'none'
         },
         '.filter-grayscale': {
           filter: 'grayscale(100%)'
