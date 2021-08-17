@@ -14,3 +14,15 @@
     color: #F0F;
   }
 }
+
+/* 使用screen 取代 media */
+@screen tablet {
+  .box {
+    width: 50px;
+  }
+}
+
+/* 使用theme對應config 設定顏色 */
+.test-white {
+  color: theme('colors.gray.500');
+}

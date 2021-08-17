@@ -114,10 +114,16 @@
         Create a new project from a variety of starting templates.
       </p>
     </div>
-    <div class="test hover:primary">
+    <!-- 使用theme設定 test-white -->
+    <div class="test hover:primary test-white">
       test
     </div>
-    <!-- // va 未完成 -->
+    <!-- filter 套件應用  box @screen-->
+    <img
+      class=" filter-grayscale hover:filter-invert w-20 h-20 box"
+      src="https://interactive-examples.mdn.mozilla.net/media/examples/firefox-logo.svg"
+      alt=""
+    >
   </div>
 </template>
 <script>
@@ -135,7 +141,8 @@ export default {
 }
 
 .card {
-  @apply p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4;
+  // 若要使用import 在scss裡面要加 #{}
+  @apply p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4 #{!important};
 }
 
 .test\:tee {
