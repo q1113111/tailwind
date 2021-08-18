@@ -141,6 +141,8 @@
     <button class="btn btn-blue tablet:filter-grayscale hover:filter-grayscale">
       layers component in Unilties
     </button>
+    <!-- 使用擴充元件新增的class -->
+    <div class=" max-w-md max-h-56 bg-red-600 ro" />
   </div>
 </template>
 <script>
