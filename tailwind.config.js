@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin')
+const _ = require('lodash')
 // 如果要安裝全域設定 使用指令 npx tailwindcss init --full
 module.exports = {
   purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
@@ -38,7 +39,7 @@ module.exports = {
   plugins: [
     // 用JS方式 設定全域樣式
 
-    plugin(function ({ addBase, theme, addComponents, addUtilities }) {
+    plugin(function ({ addBase, theme, addComponents, addUtilities, e }) {
       // 設定btn 組件樣式
       const buttons = {
         '.btn': {
@@ -63,7 +64,16 @@ module.exports = {
           filter: 'grayscale(100%)'
         }
       }
+      // 使用擴充元件的方式
+      const rotateUtilities = _.map(theme('rotate'), (value, key) => {
+        return {
+          [`.${e(`rotate-${key}`)}`]: {
+            transform: `rotate(${value})`
+          }
+        }
+      })
       addUtilities(newUtilities, ['responsive', 'hover'])
+      addUtilities(rotateUtilities)
       addComponents(buttons)
       // 設定基本樣式
       addBase({
