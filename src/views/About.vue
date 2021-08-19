@@ -10,7 +10,7 @@
     <h2>我是H2</h2>
     <!-- @apply -->
     <div class="card">
-      <div class="flex-shrink-0">
+      <div class="flex-shrink-0 rotate-1/4">
         <svg
           class="h-12 w-12"
           viewBox="0 0 40 40"

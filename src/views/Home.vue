@@ -153,6 +153,8 @@
         </div>
       </li>
     </ul>
+    <div class=" h-screen max-h-80 max-w-xl bg-gradient-blue-green tablet:bg-gradient-purple-blue" />
+    <div class=" h-72 w-36 bg-primary" />
   </div>
 </template>
 

@@ -26,35 +26,36 @@
 /* 使用theme對應config 設定顏色 */
 .test-white {
   color: theme('colors.gray.500');
+}
 
-  /* 取代組件樣式  使用這種方式可以設定多個樣式 與bootstap相同 */
+/* 取代組件樣式  使用這種方式可以設定多個樣式 與bootstap相同 */
 
-  @layer components {
-    .btn {
-      @apply font-bold py-2 px-4 rounded;
-    }
-
-    .btn-blue {
-      @apply bg-blue-500 text-white; }
-
-    .btn-blue:hover {
-      @apply bg-indigo-700; }
+@layer components {
+  .btn {
+    @apply font-bold py-2 px-4 rounded;
   }
 
+  .btn-blue {
+    @apply bg-blue-500 text-white; }
 
-  /* 工具類class */
-  @layer utilities {
-    @responsive {
-      @variants dark ,hover,
-        focus {
-        .filter-none {
-          filter: none;
-        }
+  .btn-blue:hover {
+    @apply bg-indigo-700; }
+}
 
-        .filter-grayscale {
-          filter: grayscale(100%);
-        }
+
+/* 工具類class */
+@layer utilities {
+  @responsive {
+    @variants dark ,hover,
+      focus {
+      .filter-none {
+        filter: none;
+      }
+
+      .filter-grayscale {
+        filter: grayscale(100%);
       }
     }
   }
 }
+

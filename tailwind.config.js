@@ -25,6 +25,20 @@ module.exports = {
     backdropFilter: { // defaults to {}
       none: 'none',
       blur: 'blur(20px)'
+    },
+    rotate: {
+      '1/4': '90deg'
+    },
+    gradients: theme => ({
+      'blue-green': [theme('colors.blue.500'), theme('colors.green.500')],
+      'purple-blue': [theme('colors.purple.500'), theme('colors.blue.500')]
+      // ...
+    }),
+    // 必須加extend 繼承預設顏色 除非要全部自訂顏色
+    extend: {
+      colors: {
+        primary: '#000'
+      }
     }
   },
   variants: {
@@ -34,12 +48,13 @@ module.exports = {
     divideColor: ['group-hover'],
     // fiter套件
     filter: ['responsive', 'hover'], // defaults to ['responsive']
-    backdropFilter: ['responsive', 'hover'] // defaults to ['responsive']
+    backdropFilter: ['responsive', 'hover'], // defaults to ['responsive']
+    gradients: ['responsive', 'hover']
   },
   plugins: [
     // 用JS方式 設定全域樣式
 
-    plugin(function ({ addBase, theme, addComponents, addUtilities, e }) {
+    plugin(function ({ addBase, theme, addComponents, addUtilities, e, variants }) {
       // 設定btn 組件樣式
       const buttons = {
         '.btn': {
@@ -72,6 +87,15 @@ module.exports = {
           }
         }
       })
+      // 也都可以做成一個js檔 在require
+      const gradients = theme('gradients', {})
+      // const gradientVariants = variants('gradients', [])
+      const gradientsUnit = _.map(gradients, ([start, end], name) => ({
+        [`.${e(`bg-gradient-${name}`)}`]: {
+          backgroundImage: `linear-gradient(to right,${start},${end})`
+        }
+      }))
+      addUtilities(gradientsUnit, variants('gradients'))
       addUtilities(newUtilities, ['responsive', 'hover'])
       addUtilities(rotateUtilities)
       addComponents(buttons)
