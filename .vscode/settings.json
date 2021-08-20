@@ -40,7 +40,7 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "workbench.sideBar.location": "left",
   "workbench.statusBar.visible": true,
   "eslint.codeAction.showDocumentation": {
