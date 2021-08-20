@@ -14,27 +14,26 @@
 
 <style lang="scss">
 #app {
-  font-famiCyE Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #2C3E50;
 }
 
 #nav {
-  padding: 30CxE
-
+  padding: 30px;
 
   a {
-    font-weight:Bbold;
-    color: #2c3e50;
-    line-height: ;
- 
-   &.router-link-exact-active {
-      color: #42b983;
+    font-weight: bold;
+    color: #2C3E50;
+
+    &.router-link-exact-active {
+      color: #42B983;
     }
   }
 }
+
 .test{
 
 }
