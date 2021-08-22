@@ -10,7 +10,7 @@
   ],
   "ignoreFiles": [
     "./node_modules/**/*.{css,scss,sass}",
-    "./dist/**/*.{css,scss,sass}"
+    "./dist/**/*.{css,scss,sass}",
   ],
   "rules": {
     "selector-class-pattern": null,
