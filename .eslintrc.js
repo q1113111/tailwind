@@ -8,7 +8,7 @@ module.exports = {
   // "extends": "plugin:vue/strongly-recommended",
   // "extends": "plugin:vue/recommended" // 最嚴謹
   extends: [
-    'eslint:recommended',
+    // 'eslint:recommended',
     'plugin:vue/recommended',
     '@vue/standard'
   ],

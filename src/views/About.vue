@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about dark:bg-pink">
     <h1 class="rotate-1/2 m-auto w-60 h-10 bg-gradient-purple-blue hover:bg-gradient-blue-green">
       This is an about page
     </h1>

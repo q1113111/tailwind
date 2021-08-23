@@ -11,7 +11,9 @@
     <router-view />
   </div>
 </template>
-
+<script>
+document.documentElement.classList.add('dark')
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
