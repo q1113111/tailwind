@@ -1,5 +1,8 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    class="bg-base"
+  >
     <router-link to="/">
       Home
     </router-link> |
@@ -9,14 +12,17 @@
     <router-view />
   </div>
 </template>
-
+<script>
+document.documentElement.classList.add('theme-dark')
+</script>
 <style lang="scss">
 #app {
+  height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2C3E50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #nav {
