@@ -1,10 +1,10 @@
 <template>
   <div class="about test:tee">
     <!-- rwd -->
-    <h1 class="text-sm laptop:text-6xl">
+    <h1 class="text-sm laptop:text-6xl animate-bounce">
       標題
     </h1>
-    <h1>
+    <h1 class=" transition duration-1000 ease-in motion-safe:hover:rotate-1/4 hover:text-yellow-700">
       base 標題
     </h1>
     <h2>我是H2</h2>

@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <!-- 格線系統 -->
-    <ul class="grid grid-cols-4 gap-6">
-      <li>
+    <ul class="grid grid-cols-5 gap-6">
+      <li class=" row-span-2">
         <div class="mx-auto filter- bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex">
             <div class="md:flex-shrink-0">
@@ -27,7 +27,7 @@
           </div>
         </div>
       </li>
-      <li>
+      <li class=" col-span-3">
         <div class="mx-auto filter- bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
           <div class="md:flex">
             <div class="md:flex-shrink-0">

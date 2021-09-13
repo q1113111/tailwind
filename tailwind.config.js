@@ -49,7 +49,8 @@ module.exports = {
     // fiter套件
     filter: ['responsive', 'hover'], // defaults to ['responsive']
     backdropFilter: ['responsive', 'hover'], // defaults to ['responsive']
-    gradients: ['responsive', 'hover']
+    gradients: ['responsive', 'hover'],
+    rotate: ['responsive', 'hover']
   },
   plugins: [
     // 用JS方式 設定全域樣式
@@ -97,7 +98,7 @@ module.exports = {
       }))
       addUtilities(gradientsUnit, variants('gradients'))
       addUtilities(newUtilities, ['responsive', 'hover'])
-      addUtilities(rotateUtilities)
+      addUtilities(rotateUtilities, variants('rotate'))
       addComponents(buttons)
       // 設定基本樣式
       addBase({
